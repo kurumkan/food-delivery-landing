@@ -1,3 +1,7 @@
+/* ---------------------------------- */
+/* Basic setup */
+/* ---------------------------------- */
+
 * {
     margin: 0;
     padding: 0;
@@ -13,10 +17,72 @@ html {
     text-rendering: optimizeLegibility;
 }
 
+/* ---------------------------------- */
+/* Reusable components */
+/* ---------------------------------- */
+
+h1 {
+    margin: 0;
+    color: #fff;
+    font-size: 2.4rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+}
+
 .row {
     max-width: 1140px;
     margin: 0 auto;
 }
+
+/* ---------------------------------- */
+/* Buttons */
+/* ---------------------------------- */
+
+
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 100px;
+    text-decoration: none;
+    font-weight: 300;
+    transition: all .3s;
+}
+
+.btn-full:link,
+.btn-full:visited {
+    background-color: #F29B34;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 1px solid #F29B34;
+    color: #F29B34;
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #f08b14;
+}
+
+.btn-full:hover,
+.btn-full:active {
+   border-color: #f08b14;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    border: 1px solid #f08b14;
+    color: #fff;
+}
+
+/* ---------------------------------- */
+/* Header */
+/* ---------------------------------- */
 
 header {
     background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../../resources/img/hero.jpg) center;
@@ -31,8 +97,4 @@ header {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
-
-.hero-text-box a {
-
 }
