@@ -23,14 +23,73 @@ html {
 /* Reusable components */
 /* ---------------------------------- */
 
+h1, h2, h3 {
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
 h1 {
-    margin: 0;
     color: #fff;
     font-size: 2.4rem;
-    font-weight: 300;
-    text-transform: uppercase;
-    letter-spacing: 1px;
     word-spacing: 4px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: orange;
+    content: "";
+    width: 100px;
+    margin: 30px auto;
+}
+
+h3 {
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+
+section {
+    padding: 80px 0;
+}
+
+.box {
+    padding: 1%;
+}
+
+
+.box p {
+    font-size: 90%;
+    line-height: 145%;
+}
+
+/* ---------------------------------- */
+/* Icons */
+/* ---------------------------------- */
+.icon-big {
+    font-size: 300%;
+    display: block;
+    color: #f08b14;
+    margin-bottom: 10px;
+}
+
+/* ---------------------------------- */
+/* Paragraps */
+/* ---------------------------------- */
+.long-copy {
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
 }
 
 .row {
@@ -133,3 +192,52 @@ header {
 .main-nav li a:active {
     border-bottom: 2px solid #f08b14;
 }
+
+
+/* ---------------------------------- */
+/* Features */
+/* ---------------------------------- */
+.section-feature .long-copy {
+    margin-bottom: 40px;
+}
+
+/* ---------------------------------- */
+/* Meals */
+/* ---------------------------------- */
+
+.meals-showcase {
+    list-style: none;
+    width: 100%;
+}
+
+.meals-showcase li{
+    width: 25%;
+    display: block;
+    float: left;
+}
+
+.meal-photo{
+    margin: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.meal-photo img{
+    width: 100%;
+    transform: scale(1.15);
+    transition: all .5s;
+    opacity: .5;
+    background: #000;
+}
+
+.meal-photo img:hover {
+    transform: scale(1.03);
+    opacity: 1;
+}
+
+
+.section-meals {
+    padding: 0;
+}
+
+
