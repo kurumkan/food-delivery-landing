@@ -288,9 +288,8 @@ header {
     display: inline-block;
     width: 55px;
     height: 55px;
-
+    line-height: 50px;
     text-align: center;
-    padding: 5px;
     font-size: 1.5rem;
     margin-right: 25px;
     float: left;
