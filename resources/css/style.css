@@ -19,6 +19,15 @@ html {
     text-rendering: optimizeLegibility;
 }
 
+.clearfix {  zoom: 1;  }
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
 /* ---------------------------------- */
 /* Reusable components */
 /* ---------------------------------- */
@@ -244,6 +253,9 @@ header {
 /* ---------------------------------- */
 /* How it works */
 /* ---------------------------------- */
+.section-steps {
+    background-color: #f4f4f4;
+}
 
 .steps-box:first-child {
     text-align: right;
@@ -262,6 +274,7 @@ header {
 
 .works-step {
     margin-bottom: 50px;
+    width: 80%;
 }
 
 .works-step:last-of-type {
@@ -287,13 +300,4 @@ header {
     height: 50px;
     width: auto;
     margin-right: 10px;
-}
-
-.clearfix {  zoom: 1;  }
-.clearfix:after {
-    content: '.';
-    clear: both;
-    display: block;
-    height: 0;
-    visibility: hidden;
 }
