@@ -131,7 +131,8 @@ a:active {
 
 
 .btn:link,
-.btn:visited {
+.btn:visited,
+button[type=submit]{
     display: inline-block;
     padding: 10px 30px;
     border-radius: 100px;
@@ -154,7 +155,9 @@ a:active {
 }
 
 .btn:hover,
-.btn:active {
+.btn:active,
+button[type=submit]:hover,
+button[type=submit]:active {
     background-color: #f08b14;
 }
 
@@ -451,3 +454,34 @@ cite img {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
+
+/* ---------------------------------- */
+/* Section-form */
+/* ---------------------------------- */
+
+.contact-form {
+    width: 60%;
+    margin: 0 auto;
+}
+
+input[type=text], input[type=email], select, textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+
+input[type=checkbox] {
+    margin: 10px 5px 10px 0;
+}
+
+textarea {
+    height: 100px;
+}
+
+*:focus {
+    outline: none;
+}
+
+
