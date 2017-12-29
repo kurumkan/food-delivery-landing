@@ -193,17 +193,17 @@ header {
     transform: translate(-50%, -50%);
 }
 
-.logo {
+.logo,
+.logo-white{
     width: 100px;
     float: left;
     margin-top: 20px;
 }
 
-.main-nav {
-    float: right;
-    list-style: none;
-    margin-top: 55px;
+.logo {
+    display: none;
 }
+
 
 .main-nav li {
     display: inline-block;
@@ -216,7 +216,6 @@ header {
     color: #fff;
     font-size: 90%;
     text-transform: uppercase;
-    padding: 8px 0;
     transition: all .2s;
     border-bottom: 2px solid transparent;
 }
@@ -225,6 +224,42 @@ header {
 .main-nav li a:active {
     border-bottom: 2px solid #f08b14;
 }
+
+
+.main-nav {
+    float: right;
+    list-style: none;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, .7);
+    height: 80px;
+    line-height: 80px;
+    box-shadow: 0 2px 2px #efefef;
+    z-index: 1000;
+    max-width: none;
+    padding: 0 20px;
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+    color: #555;
+    padding: 8px 0 31px 0;
+}
+
+.sticky .logo {
+    display: block;
+    width: 70px;
+    margin: 5px 0;
+}
+
+.sticky .logo-white {
+    display: none;
+}
+
 
 
 /* ---------------------------------- */
