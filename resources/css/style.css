@@ -484,4 +484,72 @@ textarea {
     outline: none;
 }
 
+/* ---------------------------------- */
+/* Footer */
+/* ---------------------------------- */
 
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 50px;
+    font-size: .8rem;
+}
+
+.footer-nav {
+    list-style: none;
+    float: left;
+}
+
+.social-links {
+    list-style: none;
+    float: right;
+}
+
+.footer-nav li,
+.social-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited {
+    text-decoration: none;
+    border: 0;
+    color: #777;
+    transition: color .5s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+    color: #ddd;
+}
+
+.footer p{
+    text-align: center;
+    color: #777;
+    font-size: .9rem;
+    margin-top: 25px;
+}
+
+.social-links {
+    transform: scale(1.7);
+    transition: color .3s;
+}
+
+.ion-social-facebook:hover {
+    color: #3B5998;
+}
+
+.ion-social-twitter:hover {
+    color: #1DA1F2;
+}
+
+.ion-social-googleplus:hover {
+    color: #DB4437;
+}
+
+.ion-social-instagram:hover {
+    color: #4C5FD7;
+}
