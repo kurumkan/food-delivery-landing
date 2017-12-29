@@ -229,6 +229,7 @@ header {
 .main-nav {
     float: right;
     list-style: none;
+    margin-top: 50px;
 }
 
 .sticky {
@@ -242,6 +243,10 @@ header {
     z-index: 1000;
     max-width: none;
     padding: 0 20px;
+}
+
+.sticky .main-nav {
+    margin-top: 0px;
 }
 
 .sticky .main-nav li a:link,
