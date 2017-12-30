@@ -204,6 +204,11 @@ header {
     display: none;
 }
 
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 50px;
+}
 
 .main-nav li {
     display: inline-block;
@@ -223,13 +228,6 @@ header {
 .main-nav li a:hover,
 .main-nav li a:active {
     border-bottom: 2px solid #f08b14;
-}
-
-
-.main-nav {
-    float: right;
-    list-style: none;
-    margin-top: 50px;
 }
 
 .sticky {
@@ -265,6 +263,25 @@ header {
     display: none;
 }
 
+.mobile-nav-icon {
+    cursor: pointer;
+    float: right;
+    display: none;
+    font-size: 2rem;
+    margin-top: 20px;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.mobile-nav-icon:hover,
+.mobile-nav-icon:active {
+    color: rgba(255, 255, 255, .5);
+}
+
+.main-nav-icon {
+    font-size: 2rem;
+    color: #fff;
+}
 
 
 /* ---------------------------------- */

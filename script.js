@@ -1,4 +1,8 @@
 $(document).ready(function() {
+  $('.mobile-nav-icon').click(function () {
+    $('#row-with-navbar').toggleClass('open', 1000);
+  });
+
   var waypoint = new Waypoint({
     element: document.getElementById('waypoint'),
     handler: function() {

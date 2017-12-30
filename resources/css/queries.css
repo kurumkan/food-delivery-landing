@@ -13,6 +13,69 @@
     .footer-nav li {
         display: block;
     }
+
+    .main-nav {
+        float: left;
+        margin-top: 20px;
+        margin-left: 40px;
+        display: none;
+        width: 40%;
+    }
+    .main-nav li {
+        display: block;
+        font-size: 1.2rem;
+        margin: 7px 0;
+    }
+    .main-nav .li a:link,
+    .main-nav li a:visited {
+        display: block;
+        border: 0;
+    }
+
+    .mobile-nav-icon {
+        display: block;
+    }
+
+    .sticky .main-nav {
+        margin-top: 20px;
+        color: #fff;
+    }
+    .sticky .main-nav li {
+        margin: 2px 0;
+        line-height: 30px;
+    }
+    .sticky .main-nav li a:link,
+    .sticky .main-nav li a:visited {
+        padding: 2%;
+        font-size: 1rem;
+    }
+    .sticky .mobile-nav-icon {
+        margin-top: 0;
+        color: #555;
+    }
+
+    #row-with-navbar.open {
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    #row-with-navbar.open .main-nav {
+        display: block;
+    }
+
+    .ion-navicon-round {
+        display: inline-block;
+    }
+    .ion-close-round {
+        display: none;
+    }
+    #row-with-navbar.open .ion-navicon-round {
+        display: none;
+    }
+    #row-with-navbar.open .ion-close-round {
+        display: inline-block;
+    }
+
 }
 
 /* Small devices (landscape phones, less than 768px)*/
@@ -30,12 +93,12 @@
     .col {
         width: 100%;
     }
-    .main-nav {
-        display: none;
-    }
     .long-copy {
         width: 100%;
         margin-left: 0;
+    }
+    .main-nav {
+        font-size: .8rem;
     }
     h1 {
         font-size: 1.8rem;
