@@ -595,3 +595,23 @@ textarea {
 .ion-social-instagram:hover {
     color: #4C5FD7;
 }
+
+/* ---------------------------------- */
+/* animations */
+/* ---------------------------------- */
+.js-animation-1,
+.js-animation-2,
+.js-animation-3 {
+    opacity: 0;
+    animation-duration: 1s;
+}
+
+.js-animation-4 {
+    animation-duration: 1s;
+}
+
+.js-animation-1.animated,
+.js-animation-2.animated,
+.js-animation-3.animated {
+    opacity: 1;
+}
