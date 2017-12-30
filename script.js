@@ -43,4 +43,19 @@ $(document).ready(function() {
     offset: '50%'
   });
 
+  var map = new GMaps({
+    div: '.map',
+    lat: 40.702286,
+    lng: -73.9441411,
+    zoom: 12
+  });
+
+  map.addMarker({
+    lat: 40.7032591,
+    lng: -73.99,
+    title: 'Main Store',
+    infoWindow: {
+      content: '<p>NY Headquarters</p>'
+    }
+  })
 });

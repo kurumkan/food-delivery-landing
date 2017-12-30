@@ -238,7 +238,7 @@ header {
     height: 80px;
     line-height: 80px;
     box-shadow: 0 2px 2px #efefef;
-    z-index: 1000;
+    z-index: 10000;
     max-width: none;
     padding: 0 20px;
 }
@@ -518,9 +518,28 @@ cite img {
 /* Section-form */
 /* ---------------------------------- */
 
+.section-form {
+    position: relative;
+    height: 500px;
+    padding: 0;
+}
+
 .contact-form {
-    width: 60%;
-    margin: 0 auto;
+    width: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: rgba(255, 255, 255, .7);
+    height: 500px;
+    z-index: 1000;
+
+    padding: 30px;
+}
+.map {
+    height: 500px;
+    width: 100%;
+    position: absolute;
+    top: 0;
 }
 
 input[type=text], input[type=email], select, textarea {
@@ -541,6 +560,10 @@ textarea {
 
 *:focus {
     outline: none;
+}
+
+.mapbox {
+
 }
 
 /* ---------------------------------- */
